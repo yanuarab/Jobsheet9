@@ -8,14 +8,23 @@ public class StackTugasMahasiswa25 {
         stack = new Mahasiswa25[size];
         top = -1;
     }
+public boolean isFull() {
+        if (top == size - 1){
+            return true;
+        }else{
+            return false;
+        }
+    }
 
     public boolean isEmpty() {
-        return top == -1;
+        if (top == -1){
+            return true;
+        }else{
+            return false;
+        }
     }
 
-    public boolean isFull() {
-        return top == size - 1;
-    }
+    
 
     public void push(Mahasiswa25 mhs) {
         if (!isFull()) {

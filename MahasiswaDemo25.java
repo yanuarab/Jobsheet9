@@ -14,7 +14,7 @@ public class MahasiswaDemo25 {
             System.out.println("4. Lihat Daftar Tugas");
             System.out.print("Pilih: ");
             pilih = sc.nextInt();
-            sc.nextLine(); // Menghapus newline
+            sc.nextLine(); 
 
             switch (pilih) {
                 case 1:
