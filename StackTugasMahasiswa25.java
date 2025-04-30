@@ -74,4 +74,19 @@ public boolean isFull() {
             System.out.println(stack[i].nama + " - " + stack[i].nim + " - " + stack[i].kelas);
         }
     }
+    public String konversiDesimalKeBiner(int nilai) { // percobaan 2
+        StackKonversi25 stack = new StackKonversi25();
+        while (nilai > 0) {
+            int sisa = nilai % 2;
+            stack.push(sisa);
+            nilai = nilai / 2;
+        }
+    
+        String biner = new String();
+        while (!stack.isEmpty()) {
+            biner += stack.pop();
+        }
+        return biner;
+    }
+    
 }
